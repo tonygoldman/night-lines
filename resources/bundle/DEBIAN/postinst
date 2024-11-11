@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+sudo chown root:root /bin/start_mission.sh
+sudo chown root:root /bin/stop_mission.sh
+sudo chown root:root /etc/systemd/system/mission.service
+sudo systemctl enable mission.service
+
+sudo nmcli c reload

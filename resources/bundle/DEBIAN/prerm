@@ -1,7 +1,8 @@
+
 #!/bin/bash
 set -e
 
-sudo chown root:root /etc/systemd/system/mission.service
-sudo systemctl enable mission.service
+sudo systemctl stop mission.service
+sudo systemctl disable mission.service
 
 sudo nmcli c reload
