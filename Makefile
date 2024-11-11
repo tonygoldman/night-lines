@@ -7,3 +7,7 @@ full_simulation:
 .PHONY: kill_simulation
 kill_simulation:
 	./scripts/simulation/kill_simulation.sh
+
+.PHONY: bundle
+bundle:
+	./scripts/bundle/build.sh
