@@ -42,7 +42,7 @@ services:
     networks:
       - dev
 
-  mission_planner:
+  mavros:
     build:
       context: ${PWD}
       dockerfile: docker/dockerfiles/mavros.dockerfile
