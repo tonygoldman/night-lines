@@ -2,7 +2,7 @@ FROM ros:humble-ros-base
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install --no-install-recommends -y \
-    python3-pip
+    python3-pip \
     && apt-get clean \
     && srm -rf /var/lib/apt/lists/*
 

@@ -6,7 +6,7 @@ if [ $EUID == 0 ]; then
   exit 1
 fi
 
-sudo apt install -y docker.io docker-compose
+sudo apt install -y docker.io docker-compose qemu-user-static
 # enable user to access docker without sudo
 sudo usermod -aG docker $USER
 
