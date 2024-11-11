@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e 
 
 sudo rm -rf bundle
 mkdir -p bundle/build
