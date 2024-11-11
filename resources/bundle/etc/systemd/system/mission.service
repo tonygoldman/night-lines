@@ -1,0 +1,14 @@
+[Unit]
+Description=This service file is responsible for starting the mission automatically on startup
+
+After=docker.service
+Requires=docker.service
+
+[Service]
+Restart=always
+RestartSec=5
+ExecStart=/bin/start_mission.sh
+ExecStop=/bin/stop_mission.sh
+
+[Install]
+WantedBy=multi-user.target

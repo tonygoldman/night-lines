@@ -1,0 +1,7 @@
+Package: night-lines
+Version: 0.0.1
+Maintainer: Athena-B
+Depends: network-manager, docker.io, docker-compose
+Architecture: all
+Homepage: http://athena.com
+Description: Install mission files on the on board computer
