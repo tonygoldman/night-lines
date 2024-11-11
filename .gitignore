@@ -4,3 +4,5 @@ build
 install
 log
 bundle
+**/__pycache__/**
+bundle/**

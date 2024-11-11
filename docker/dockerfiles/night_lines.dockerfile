@@ -13,3 +13,6 @@ RUN pip3 install -U --no-cache-dir \
 WORKDIR /app
 COPY src src
 RUN /ros_entrypoint.sh colcon build
+
+ENTRYPOINT ["/bin/bash", "-c"]
+CMD ["source install/setup.bash && ros2 launch launch/night_lines_launch.py"]
