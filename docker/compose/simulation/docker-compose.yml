@@ -8,7 +8,6 @@ services:
     container_name: sitl
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - sitl_eeprom_cache:/ardupilot/eeprom.bin
     environment:
       - DISPLAY=${DISPLAY}
     privileged: true
@@ -19,8 +18,6 @@ services:
         "sim_vehicle.py",
         "-v",
         "ArduCopter",
-        "--map",
-        "--console",
         "--no-rebuild",
         "--no-mavproxy",
         "-l",
@@ -56,4 +53,4 @@ networks:
     driver: bridge
 
 volumes:
-  sitl_eeprom_cache:
+  ardupilot_cache:
