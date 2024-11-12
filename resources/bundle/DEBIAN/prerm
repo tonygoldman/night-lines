@@ -4,5 +4,6 @@ set -e
 
 sudo systemctl stop mission.service
 sudo systemctl disable mission.service
+sudo docker image rm night_lines:latest
 
 sudo nmcli c reload
